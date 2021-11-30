@@ -40,3 +40,14 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+const navA = document.querySelector('nav a');
+const navImg = document.querySelector('nav img');
+const ctaH = document.querySelector('cta-text h1');
+const ctaButton = document.querySelector('cta-text button');
+const ctaImg = document.querySelector('cta-text img');
+const firstSectionDiv1 = document.querySelector('top-content text-content:nth-child(1)');
+const firstSectionDiv2 = document.querySelector('top-content text-content:nth-child(2)');
+
+firstSectionDiv2.textContent = siteContent["main-content"]["features-content"];
