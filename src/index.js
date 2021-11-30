@@ -63,12 +63,13 @@ const firstSectionDiv1 = document.querySelector('.text-content:nth-of-type(1) p'
 const firstSectionDiv1H = document.querySelector('.text-content:nth-of-type(1) h4');
 const firstSectionDiv2 = document.querySelector('.text-content:nth-of-type(2) p');
 const firstSectionDiv2H = document.querySelector('.text-content:nth-of-type(2) h4');
-const firstSectionDiv3 = document.querySelector('.text-content:nth-of-type(3) p');
-const firstSectionDiv3H = document.querySelector('.text-content:nth-of-type(3) h4');
-const firstSectionDiv4 = document.querySelector('.text-content:nth-of-type(4) p');
-const firstSectionDiv4H = document.querySelector('.text-content:nth-of-type(4) h4');
-const firstSectionDiv5 = document.querySelector('.text-content:nth-of-type(5) p');
-const firstSectionDiv5H = document.querySelector('.text-content:nth-of-type(5) h4');
+const firstSectionDiv3 = document.querySelector('.bottom-content .text-content:nth-of-type(1) p');
+const firstSectionDiv3H = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4');
+const firstSectionDiv4 = document.querySelector('.bottom-content .text-content:nth-of-type(2) p');
+const firstSectionDiv4H = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4');
+const firstSectionDiv5 = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
+const firstSectionDiv5H = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
+const bottomImg = document.querySelector('.middle-img');
 
 //Second Section
 const secondSectionH = document.querySelector('.contact h4');
@@ -100,13 +101,24 @@ ctaButton.textContent = siteContent["cta"]["button"];
 ctaImg.src = siteContent["images"]["cta-img"];
 
 //main-content
-firstSectionDiv1.textContent = siteContent["main-content"]["features-h4"];
-firstSectionDiv1H.textContent = siteContent["main-content"]["features-content"];
-firstSectionDiv2.textContent = siteContent["main-content"]["about-h4"];
-firstSectionDiv2H.textContent = siteContent["main-content"]["about-content"]
-firstSectionDiv3.textContent = siteContent["main-content"]["services-h4"];
-firstSectionDiv3H.textContent = siteContent["main-content"]["services-content"]
-firstSectionDiv4.textContent = siteContent["main-content"]["product-h4"];
-firstSectionDiv4H.textContent = siteContent["main-content"]["products-content"]
-firstSectionDiv5.textContent = siteContent["main-content"]["vision-h4"];
-firstSectionDiv5H.textContent = siteContent["main-content"]["vision-content"]
+firstSectionDiv1H.textContent = siteContent["main-content"]["features-h4"];
+firstSectionDiv1.textContent = siteContent["main-content"]["features-content"];
+firstSectionDiv2H.textContent = siteContent["main-content"]["about-h4"];
+firstSectionDiv2.textContent = siteContent["main-content"]["about-content"];
+firstSectionDiv3H.textContent = siteContent["main-content"]["services-h4"];
+firstSectionDiv3.textContent = siteContent["main-content"]["services-content"];
+firstSectionDiv4H.textContent = siteContent["main-content"]["product-h4"];
+firstSectionDiv4.textContent = siteContent["main-content"]["product-content"];
+firstSectionDiv5H.textContent = siteContent["main-content"]["vision-h4"];
+firstSectionDiv5.textContent = siteContent["main-content"]["vision-content"];
+bottomImg.src = siteContent["images"]["accent-img"];
+
+//Contact
+secondSectionH.textContent = siteContent["contact"]["contact-h4"];
+secondSectionp1.textContent = siteContent["contact"]["address"];
+secondSectionp2.textContent = siteContent["contact"]["phone"];
+secondSectionp3.textContent = siteContent["contact"]["email"];
+
+//Footer
+footer.textContent = siteContent["footer"]["copyright"];
+footer.className = 'bold';
