@@ -47,7 +47,7 @@ const navImg = document.querySelector('nav img');
 const ctaH = document.querySelector('cta-text h1');
 const ctaButton = document.querySelector('cta-text button');
 const ctaImg = document.querySelector('cta-text img');
-const firstSectionDiv1 = document.querySelector('top-content text-content:nth-child(1)');
-const firstSectionDiv2 = document.querySelector('top-content text-content:nth-child(2)');
+const firstSectionDiv1 = document.querySelector('.text-content:nth-of-type(1) p');
+const firstSectionDiv2 = document.querySelector('.text-content:nth-of-type(2) p');
 
-firstSectionDiv2.textContent = siteContent["main-content"]["features-content"];
+firstSectionDiv1.textContent = siteContent["main-content"]["features-content"];
