@@ -33,10 +33,92 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "copyright": "Copyright Great Idea! 2021",
   },
   "images": {
-    "logo-img": "http://localhost:9000/img/logo.png",
-    "cta-img": "http://localhost:9000/img/cta.png",
-    "accent-img": "http://localhost:9000/img/accent.png",
+    "logo-img": "mocks/img/logo.png",
+    "cta-img": "mocks/img/cta.png",
+    "accent-img": "mocks/img/accent.png",
   },
 };
 
 console.log('project wired!')
+
+
+const navA = document.querySelector('nav a');
+const navImg = document.querySelector('nav img');
+const ctaH = document.querySelector('.cta-text h1');
+const ctaButton = document.querySelector('.cta-text button');
+const ctaImg = document.querySelector('.cta img');
+const mainImg = document.querySelector('.main-content img')
+
+//Header & Nav Bar
+const firstSectionA1 = document.querySelector('nav a:nth-of-type(1)');
+const firstSectionA2 = document.querySelector('nav a:nth-of-type(2)');
+const firstSectionA3 = document.querySelector('nav a:nth-of-type(3)');
+const firstSectionA4 = document.querySelector('nav a:nth-of-type(4)');
+const firstSectionA5 = document.querySelector('nav a:nth-of-type(5)');
+const firstSectionA6 = document.querySelector('nav a:nth-of-type(6)');
+const firstSectionImage = document.querySelector('header img');
+
+//Main Section 
+const firstSectionDiv1 = document.querySelector('.text-content:nth-of-type(1) p');
+const firstSectionDiv1H = document.querySelector('.text-content:nth-of-type(1) h4');
+const firstSectionDiv2 = document.querySelector('.text-content:nth-of-type(2) p');
+const firstSectionDiv2H = document.querySelector('.text-content:nth-of-type(2) h4');
+const firstSectionDiv3 = document.querySelector('.bottom-content .text-content:nth-of-type(1) p');
+const firstSectionDiv3H = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4');
+const firstSectionDiv4 = document.querySelector('.bottom-content .text-content:nth-of-type(2) p');
+const firstSectionDiv4H = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4');
+const firstSectionDiv5 = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
+const firstSectionDiv5H = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
+const bottomImg = document.querySelector('.middle-img');
+
+//Second Section
+const secondSectionH = document.querySelector('.contact h4');
+const secondSectionp1 = document.querySelector('.contact p:nth-of-type(1)');
+const secondSectionp2 = document.querySelector('.contact p:nth-of-type(2)');
+const secondSectionp3 = document.querySelector('.contact p:nth-of-type(3)');
+
+//Footer
+const footer = document.querySelector('footer a');
+
+//Nav Bar
+firstSectionA1.className = 'italic';
+firstSectionA1.textContent = siteContent["nav"]["nav-item-1"];
+firstSectionA2.className = 'italic';
+firstSectionA2.textContent = siteContent["nav"]["nav-item-2"];
+firstSectionA3.className = 'italic';
+firstSectionA3.textContent = siteContent["nav"]["nav-item-3"];
+firstSectionA4.className = 'italic';
+firstSectionA4.textContent = siteContent["nav"]["nav-item-4"];
+firstSectionA5.className = 'italic';
+firstSectionA5.textContent = siteContent["nav"]["nav-item-5"];
+firstSectionA6.className = 'italic';
+firstSectionA6.textContent = siteContent["nav"]["nav-item-6"];
+firstSectionImage.src = siteContent["images"]["logo-img"];
+
+//cta
+ctaH.textContent = siteContent["cta"]["h1"];
+ctaButton.textContent = siteContent["cta"]["button"];
+ctaImg.src = siteContent["images"]["cta-img"];
+
+//main-content
+firstSectionDiv1H.textContent = siteContent["main-content"]["features-h4"];
+firstSectionDiv1.textContent = siteContent["main-content"]["features-content"];
+firstSectionDiv2H.textContent = siteContent["main-content"]["about-h4"];
+firstSectionDiv2.textContent = siteContent["main-content"]["about-content"];
+firstSectionDiv3H.textContent = siteContent["main-content"]["services-h4"];
+firstSectionDiv3.textContent = siteContent["main-content"]["services-content"];
+firstSectionDiv4H.textContent = siteContent["main-content"]["product-h4"];
+firstSectionDiv4.textContent = siteContent["main-content"]["product-content"];
+firstSectionDiv5H.textContent = siteContent["main-content"]["vision-h4"];
+firstSectionDiv5.textContent = siteContent["main-content"]["vision-content"];
+bottomImg.src = siteContent["images"]["accent-img"];
+
+//Contact
+secondSectionH.textContent = siteContent["contact"]["contact-h4"];
+secondSectionp1.textContent = siteContent["contact"]["address"];
+secondSectionp2.textContent = siteContent["contact"]["phone"];
+secondSectionp3.textContent = siteContent["contact"]["email"];
+
+//Footer
+footer.textContent = siteContent["footer"]["copyright"];
+footer.className = 'bold';
